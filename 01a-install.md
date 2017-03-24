@@ -48,13 +48,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python 3. First, since it was recommended and encouraged. Second, since it's the most recent version, it will soon become the standard version. A good amount of syntax is different between the two versions - I'd rather be most comfortable in the most recent version.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> simply type 'Python --version' within the terminal
 
  
 
