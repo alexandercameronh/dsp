@@ -19,8 +19,14 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > 'pwd' - show current working directory path
+'mkdir' - create a directory
+'' - delete a directory
+'touch filename.txt' - creating a file using touch command
+'' - delete a file
+'' - rename a file
+'' - list hidden files
+'' - copy a file from one directory to another
 ---
 
 ### Q2.  List Files in Unix   
@@ -34,8 +40,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > 'ls' -- lists all files and directories within your current working directory
+'ls -a' -- lists all files and directories within working directory INCLUDING files with names beginning with a '.'
+'ls -l' -- lists all files and directories in 'long format'
+'ls -lh' --
+'ls -lah' --
+'ls -t' -- sorts the list of all files and directories by the time in which they were last modified
+'ls -Glp' -- 
 ---
 
 ### Q3.  More List Files in Unix  
