@@ -25,7 +25,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 'touch filename.txt' - creating a file using touch command
 '' - delete a file
 '' - rename a file
-'' - list hidden files
+'ls -a' - list hidden files
 '' - copy a file from one directory to another
 ---
 
@@ -40,9 +40,9 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > 'ls' -- lists all files and directories within your current working directory
+> > 'ls' -- lists all files and directories within your current working directory \n
 'ls -a' -- lists all files and directories within working directory INCLUDING files with names beginning with a '.'
-'ls -l' -- lists all files and directories in 'long format'
+'ls -l' -- lists all files and directories in 'long format' as a table 
 'ls -lh' --
 'ls -lah' --
 'ls -t' -- sorts the list of all files and directories by the time in which they were last modified
