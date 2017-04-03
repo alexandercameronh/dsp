@@ -12,8 +12,9 @@ donuts(4)
 donuts(9)
 donuts(10)
 donuts(11)
+###################################
 
-
+###################################
 def both_ends(s):
     if len(s) < 2:
         s=''
@@ -26,8 +27,9 @@ both_ends('spring')
 both_ends('Hello')
 both_ends('a')
 both_ends('xyz')
+###################################
 
-
+###################################
 def fix_start(s):
     origLen=len(s)
     s=s+s[0]
@@ -42,8 +44,10 @@ fix_start('babble')
 fix_start('aardvark')
 fix_start('google')
 fix_start('donut')
+###################################
 
 
+###################################
 def mix_up(a, b):
     """
     Given strings a and b, return a single string with a and b
@@ -60,8 +64,9 @@ def mix_up(a, b):
     'fizzy perm'
     """
     raise NotImplementedError
+###################################    
 
-
+###################################
 def verbing(s):
     if len(s) < 3:
         print(s)
@@ -76,41 +81,39 @@ def verbing(s):
 verbing('hail')
 verbing('swiming')
 verbing('do')
+###################################
 
+###################################
 def not_bad(s):
-    """
-    Given a string, find the first appearance of the substring 'not'
-    and 'bad'. If the 'bad' follows the 'not', replace the whole
-    'not'...'bad' substring with 'good'. Return the resulting string.
-    So 'This dinner is not that bad!' yields: 'This dinner is
-    good!'
+    a=0
+    b=0
+    a=s.find('not')
+    b=s.find('bad')
+    if b < a:
+        print(s)
+    else:
+        print(s.replace(s[a:b+3],'good'))
 
-    >>> not_bad('This movie is not so bad')
-    'This movie is good'
-    >>> not_bad('This dinner is not that bad!')
-    'This dinner is good!'
-    >>> not_bad('This tea is not hot')
-    'This tea is not hot'
-    >>> not_bad("It's bad yet not")
-    "It's bad yet not"
-    """
-    raise NotImplementedError
+not_bad('this movie is not so bad')
+not_bad('This dinner is not that bad!')
+not_bad('This tea is not hot')
+not_bad("It's bad yet not")
+###########################################
 
-
-def front_back(a, b):
-    """
-    Consider dividing a string into two halves. If the length is even,
-    the front and back halves are the same length. If the length is
-    odd, we'll say that the extra char goes in the front half. e.g.
-    'abcde', the front half is 'abc', the back half 'de'. Given 2
-    strings, a and b, return a string of the form a-front + b-front +
-    a-back + b-back
-
-    >>> front_back('abcd', 'xy')
-    'abxcdy'
-    >>> front_back('abcde', 'xyz')
-    'abcxydez'
-    >>> front_back('Kitten', 'Donut')
-    'KitDontenut'
-    """
-    raise NotImplementedError
+###########################################
+def front_back(a,b):
+    middle1=0
+    middle2=0
+    if len(a)%2 == 0:
+        middle1=int(len(a)/2)
+    else:
+        middle1=int((len(a)/2)+1)
+    if len(b)%2 == 0:
+        middle2=int(len(b)/2)
+    else:
+        middle2=int((len(b)/2)+1)
+    print("{}{}{}{}".format(a[:middle1:],b[:middle2:],a[middle1::],b[middle2::]))
+    
+front_back('abcd', 'xy')
+front_back('abcde', 'xyz')
+front_back('Kitten','Donut')
