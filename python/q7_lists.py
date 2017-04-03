@@ -3,36 +3,45 @@
 
 
 def match_ends(words):
-    """
-    Given a list of strings, return the count of the number of strings
-    where the string length is 2 or more and the first and last chars
-    of the string are the same.
+    k=0
+    m=0
+    newlist=[]
+    for i in range(0, len(words)):
+        if len(words[i]) >= 2:
+            newlist.append(words[i])
+    for i in range(0,len(newlist)):
+        checkword=newlist[i]
+        if checkword[0] == checkword[-1]:
+            m=m+1
+    print(m)
+    
+match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
+match_ends(['', 'x', 'xy', 'xyx', 'xx'])
+match_ends(['aaa', 'be', 'abc', 'hello'])  
+##############################################################################################
 
-    >>> match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
-    3
-    >>> match_ends(['', 'x', 'xy', 'xyx', 'xx'])
-    2
-    >>> match_ends(['aaa', 'be', 'abc', 'hello'])
-    1
-    """
-    raise NotImplementedError
-
-
+##############################################################################################
 def front_x(words):
-    """
-    Given a list of strings, return a list with the strings in sorted
-    order, except group all the strings that begin with 'x' first.
-    e.g. ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields
-         ['xanadu', 'xyz', 'aardvark', 'apple', 'mix'].
+    xlist=[]
+    newlist=[]
+    for i in range(0, len(words)):
+        checkword=words[i]
+        if checkword[0] == 'x':
+            xlist.append(words[i])
+        else:
+            newlist.append(words[i])
+    newlist.sort()
+    xlist.sort()
+    xlist = list(xlist+newlist)
+    print(xlist)
 
-    >>> front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa'])
-    ['xaa', 'xzz', 'axx', 'bbb', 'ccc']
-    >>> front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa'])
-    ['xaa', 'xcc', 'aaa', 'bbb', 'ccc']
-    >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
-    ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
-    """
-    raise NotImplementedError
+    
+front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa'])
+front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa'])
+front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])   
+##############################################################################################
+
+##############################################################################################
 
 
 def sort_last(tuples):
