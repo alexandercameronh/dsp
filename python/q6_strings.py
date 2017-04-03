@@ -3,60 +3,45 @@
 
 
 def donuts(count):
-    """
-    Given an int count of a number of donuts, return a string of the
-    form 'Number of donuts: <count>', where <count> is the number
-    passed in. However, if the count is 10 or more, then use the word
-    'many' instead of the actual count.
-
-    >>> donuts(4)
-    'Number of donuts: 4'
-    >>> donuts(9)
-    'Number of donuts: 9'
-    >>> donuts(10)
-    'Number of donuts: many'
-    >>> donuts(99)
-    'Number of donuts: many'
-    """
-    raise NotImplementedError
+    if count < 10:
+        print("Numer of donuts: {}".format(count))
+    else:
+        print("Number of donuts: many.")
+        
+donuts(4)    
+donuts(9)
+donuts(10)
+donuts(11)
 
 
 def both_ends(s):
-    """
-    Given a string s, return a string made of the first 2 and the last
-    2 chars of the original string, so 'spring' yields 'spng'.
-    However, if the string length is less than 2, return instead the
-    empty string.
+    if len(s) < 2:
+        s=''
+        print("'{}'".format(s))
+    else:
+        print("{}{}{}{}".format(s[0],s[1],s[-2],s[-1]))
+    
 
-    >>> both_ends('spring')
-    'spng'
-    >>> both_ends('Hello')
-    'Helo'
-    >>> both_ends('a')
-    ''
-    >>> both_ends('xyz')
-    'xyyz'
-    """
-    raise NotImplementedError
+both_ends('spring')
+both_ends('Hello')
+both_ends('a')
+both_ends('xyz')
 
 
 def fix_start(s):
-    """
-    Given a string s, return a string where all occurences of its
-    first char have been changed to '*', except do not change the
-    first char itself. e.g. 'babble' yields 'ba**le' Assume that the
-    string is length 1 or more.
+    origLen=len(s)
+    s=s+s[0]
+    for i in range(1, len(s)-1):
+        if s[0] != s[i]:
+            s=s+s[i]
+        else:
+            s=s+'*'
+    print(s[origLen::])
 
-    >>> fix_start('babble')
-    'ba**le'
-    >>> fix_start('aardvark')
-    'a*rdv*rk'
-    >>> fix_start('google')
-    'goo*le'
-    >>> fix_start('donut')
-    'donut'
-    """
-    raise NotImplementedError
+fix_start('babble')
+fix_start('aardvark')
+fix_start('google')
+fix_start('donut')
 
 
 def mix_up(a, b):
@@ -78,21 +63,19 @@ def mix_up(a, b):
 
 
 def verbing(s):
-    """
-    Given a string, if its length is at least 3, add 'ing' to its end.
-    Unless it already ends in 'ing', in which case add 'ly' instead.
-    If the string length is less than 3, leave it unchanged. Return
-    the resulting string.
-
-    >>> verbing('hail')
-    'hailing'
-    >>> verbing('swiming')
-    'swimingly'
-    >>> verbing('do')
-    'do'
-    """
-    raise NotImplementedError
-
+    if len(s) < 3:
+        print(s)
+    else:
+        if s[-1] == 'g':
+            s=s + 'ly'
+            print(s)
+        else:
+            s=s + 'ing'
+            print(s)
+            
+verbing('hail')
+verbing('swiming')
+verbing('do')
 
 def not_bad(s):
     """
