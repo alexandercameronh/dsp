@@ -81,14 +81,13 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> Emacs is my preferred choice for terminal editor. Emacs was the first terminal editor that I ever used, so I feel like I am most familiar with it. Also, I feel that it has easy-to-remember commands and very user-friendly.
 --
 
 ### Q3. Graphical Editor
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I decided to go with Spyder. I think that the interface is minimal and easy for the eyes to absorb. Also, the syntax coloring is extremely helpful when reading multiple lines of code.
 
  
