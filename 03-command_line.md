@@ -70,7 +70,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs is a way of executing a command on a series of items in order. Very simliar to a loop but easier syntax. For instance, if I wanted to delete the contents of an entire folder (simple example but still displays a use of xargs nonetheless) I can type 'ls | xargs rm'.
 
  
 
