@@ -12,7 +12,9 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> Both lists and tuples are sequences of values (of any type). Also, both lists and tuples are indexed by integers. The main difference between the two is that lists are mutable; tuples are immutable. Tuples would work as keys in dictionaries. This is because of the properties of Dictionaries. Dictionaries within Python were designed using a hashtable and for this reason the keys need to be hashable. This would cause problems with mutable keys (lists). 
+>> Both lists and tuples are sequences of values (of any type). Also, both lists and tuples are indexed by integers. 
+
+>> The main difference between the two is that lists are mutable; tuples are immutable. Tuples would work as keys in dictionaries. This is because of the properties of Dictionaries. Dictionaries within Python were designed using a hashtable and for this reason the keys need to be hashable. This would cause problems with mutable keys (lists). 
 ---
 
 ### Q2. Lists &amp; Sets
@@ -22,6 +24,7 @@ How are Python lists and sets similar and different? Give examples of using both
 >> Sets are unordered, contain unique unduplicated elements, and are not indexed by integers. Lists are ordered values of any type, and indexed by integers.
 
 >> List: a=[1,2,3,3,3,4,5,5, 'apple']
+
 >>Set: b=[1,2,3,4]
 
 >>When trying to find a specific element within a set or list - sets are faster since they do not contain duplicate values.
@@ -33,6 +36,19 @@ How are Python lists and sets similar and different? Give examples of using both
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 >> The lambda fuction is an 'anonymous' (does not have a name) function. It allows the user to create a simple, one-lined function that can quickly be written and executed.
+
+>> One reason why it is used frequently is because of it's efficieny.
+
+>> Example: Imagine I have a small home directory of my friend's their corresponding ages, I can quickly sort this set directory (set of tuples) based on age using lamba expression in the key argument:
+
+>>homeDirectory = [
+        ('Jane', 'Doe', '22'),
+        ('Alex', 'Hughes', '26'),
+        ('Lauren', 'Gehman', '21')]
+
+>>sorted(homeDirectory, key=lambda age:age[2])
+
+>>OUTPUT: [('Lauren', 'Gehman', '21'), ('Jane', 'Doe', '22'), ('Alex', 'Hughes', '26')]
 
 
 
