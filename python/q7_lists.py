@@ -59,7 +59,9 @@ def sort_last(tuples):
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
     raise NotImplementedError
+##############################################################################################
 
+##############################################################################################
 
 def remove_adjacent(nums):
     """
@@ -78,20 +80,18 @@ def remove_adjacent(nums):
     []
     """
     raise NotImplementedError
+##############################################################################################
 
+##############################################################################################
 
 def linear_merge(list1, list2):
-    """
-    Given two lists sorted in increasing order, create and return a
-    merged list of all the elements in sorted order. You may modify
-    the passed in lists. Ideally, the solution should work in "linear"
-    time, making a single pass of both lists.
-
-    >>> linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
-    ['aa', 'bb', 'cc', 'xx', 'zz']
-    >>> linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz'])
-    ['aa', 'bb', 'cc', 'xx', 'zz']
-    >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
-    ['aa', 'aa', 'aa', 'bb', 'bb']
-    """
-    raise NotImplementedError
+    list(list1)
+    list(list2)
+    list1.extend(list2)
+    list(list1)
+    list1.sort()
+    print(list1)
+    
+linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
+linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz'])
+linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
