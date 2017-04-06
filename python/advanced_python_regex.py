@@ -116,3 +116,4 @@ for i in range(0, len(emailList2)):
     emailListFinal.append(emailList2[i][1])
 
 print("\n\nThere are {} different email domains".format(len(set(emailListFinal))))
+print(set(emailListFinal))
