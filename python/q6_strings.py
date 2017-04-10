@@ -48,22 +48,21 @@ fix_start('donut')
 
 
 ###################################
-def mix_up(a, b):
-    """
-    Given strings a and b, return a single string with a and b
-    separated by a space '<a> <b>', except swap the first 2 chars of
-    each string. Assume a and b are length 2 or more.
 
-    >>> mix_up('mix', 'pod')
-    'pox mid'
-    >>> mix_up('dog', 'dinner')
-    'dig donner'
-    >>> mix_up('gnash', 'sport')
-    'spash gnort'
-    >>> mix_up('pezzy', 'firm')
-    'fizzy perm'
-    """
-    raise NotImplementedError
+def mix_up(a,b):
+    new_str=''
+    new_str+=b[0:2]
+    new_str+=a[2:]
+    new_str+=' '
+    new_str+=a[0:2]
+    new_str+=b[2:]
+    new_str=''.join(new_str)  
+    print("{} \n".format(new_str))
+
+#mix_up('mix', 'pod')
+#mix_up('dog', 'dinner')
+#mix_up('gnash', 'sport')
+#mix_up('pezzy', 'firm')
 ###################################    
 
 ###################################
