@@ -4,3 +4,7 @@
 >> Cohen's d for total weight: 0.08867 
 
 >>Cohen's d for pregnancy length: 0.02887
+
+
+
+>> (code for this problem is available in the uploaded ipython notebook: Stats+Exercise+Solutions.ipynb)
